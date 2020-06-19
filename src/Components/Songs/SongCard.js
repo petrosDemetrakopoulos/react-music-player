@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from 'react';
+import { Store } from '../../Context/Store'
 import { Button } from 'react-bootstrap';
 import { PlayFill } from 'react-bootstrap-icons';
 //A custom component representing the card of an album in the album list
 export default function SongCard({ crnSong }) {
+    const {state, dispatch} = useContext(Store);
 
     function handleClick() {
-       console.log('song play clicked')
+       dispatch({type: 'PICK_SONG', payload: crnSong})
     }
 
   return (

@@ -13,13 +13,13 @@ export default function reducer(state, action) {
 				album: action.payload
 			};
 		}
+		case 'PICK_SONG' : {
+			return {
+				...state,
+				song: action.payload,
+				playbackStatus: 'playing'
+			};
+		}
 		default: return state
-	}
-	case 'PICK_SONG' : {
-		return {
-			...state,
-			song: action.payload,
-			playbackStatus: 'playing'
-		};
 	}
 }

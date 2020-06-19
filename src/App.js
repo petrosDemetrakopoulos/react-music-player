@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import AlbumsListPage from './Pages/AlbumsListPage'
 import AlbumDetailPage from './Pages/AlbumDetailPage'
+import AudioPlayer from './Components/AudioPlayer/AudioPlayer'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/album/:_id' component={AlbumDetailPage} />
           </div>
       </Router>
+       <AudioPlayer />
       </div>
   );
 }

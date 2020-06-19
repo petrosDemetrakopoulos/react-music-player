@@ -1,6 +1,8 @@
 import React, {useContext, useEffect} from 'react';
 import SongDetails from './SongDetails';
 import { Store } from '../../Context/Store'
+import Play from './PlayButton'
+import Pause from './PauseButton'
 
 function AudioPlayer() {
   const {state, dispatch} =  useContext(Store);
@@ -15,6 +17,14 @@ function AudioPlayer() {
     }
   })
 
+    function play() {
+      console.log('play pressed')
+    }
+
+    function pause() {
+    console.log('pause pressed')
+    }
+
 
   return(
     <div className="player">
@@ -22,6 +32,12 @@ function AudioPlayer() {
     Your browser does not support the <code>audio</code> element.
     </audio>
     <SongDetails name={song ? song.name: ""} artist={song ? song.artist: ""}/>
+          <div className="controls">
+        {playbackStatus === 'playing'? 
+          <Pause handleClick={() => pause()} /> :
+          <Play handleClick={() => play()} />
+        }
+        </div>
     </div>
     )
 }

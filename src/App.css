@@ -56,3 +56,21 @@
   background-color: black;
   margin-top: 1em;
 }
+
+.controls {
+  background-color: black;
+  text-align: center;
+}
+
+.player_button {
+  margin-top: 0.5em;
+}
+
+.btn-circle.btn-lg {
+  width: 45px;
+  height: 45px;
+  padding: 8px 10px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}

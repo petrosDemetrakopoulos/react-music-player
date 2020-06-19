@@ -108,7 +108,7 @@ The code has the following structure
 
 ### Mock data
 `data.json` file holds the mock data that the app uses to display. 
-I found both images and audio files in [archive.org](archive.org) and [wikimedia.org](wikimedia.org)
+I found both images and audio files in [archive.org](https://archive.org) and [wikimedia.org](https://wikimedia.org)
 
 ### How to run it
 

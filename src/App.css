@@ -51,3 +51,8 @@
 .song {
   background-color: black;
 }
+
+.player {
+  background-color: black;
+  margin-top: 1em;
+}

@@ -19,7 +19,7 @@ const AlbumsListPage = () => {
 	}
 	return (
 		<div>
-		<h2 style={{marginTop: '1rem'}}>Albums</h2>
+		<h2 className="albumsHeader">Albums</h2>
 		<AlbumsList albums={state.albums} />
 		</div>
 		);

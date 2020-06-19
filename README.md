@@ -41,6 +41,8 @@ Except the functionality mentioned in the document, I implemented the following 
 
 * If the song that just ended is the last song of the album, the audio player loads and plays the first one of the next album (tried to mock the Spotify functionality)
 
+* If the song playing is the last song of the album, and user presses the Next button, the audio player loads and plays the first one of the next album (same functionality for Previous buttton too)
+
 ## Project structure
 The code has the following structure
 

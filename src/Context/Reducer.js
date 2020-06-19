@@ -20,6 +20,12 @@ export default function reducer(state, action) {
 				playbackStatus: 'playing'
 			};
 		}
+		case 'CHANGE_PLAYBACK_STATUS' : {
+			return {
+				...state,
+				playbackStatus: action.payload
+			};
+		}
 		default: return state
 	}
 }

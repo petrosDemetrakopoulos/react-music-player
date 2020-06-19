@@ -17,13 +17,15 @@ function AudioPlayer() {
     }
   })
 
-    function play() {
-      console.log('play pressed')
+  function play() {
+    if(song){
+      dispatch({type:'CHANGE_PLAYBACK_STATUS', payload: 'playing'})
     }
+  }
 
-    function pause() {
-    console.log('pause pressed')
-    }
+  function pause() {
+    dispatch({type:'CHANGE_PLAYBACK_STATUS', payload: 'paused'})
+  }
 
 
   return(

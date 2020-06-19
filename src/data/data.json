@@ -1,5 +1,188 @@
-[{"_id":"1", 
-	"name": "The Beatles", 
-	"cover": "https://www.whizzpast.com/wp-content/uploads/2013/10/Abbey+Road.jpg", 
-	"songs": [
-	{"name": "A beatles song", "cover": "https://www.whizzpast.com/wp-content/uploads/2013/10/Abbey+Road.jpg", "artist": "The beatles"}]}]
+[
+   {
+      "_id":"1",
+      "artist":"The Beatles",
+      "date":"20.01.1964",
+      "name":"Meet the Beatles!",
+      "cover":"https://upload.wikimedia.org/wikipedia/en/5/52/Meet_the_Beatles.jpg",
+      "songs":[
+         {
+            "name":"I Saw Her Standing There",
+            "artist":"John Lennon",
+            "cover":"https://upload.wikimedia.org/wikipedia/en/5/52/Meet_the_Beatles.jpg",
+            "file":"https://ia801009.us.archive.org/5/items/tntvillage_360273/The%20Beatles%20-%20Meet%20The%20Beatles/02-I%20Saw%20Her%20Standing%20There.mp3"
+         },
+         {
+            "name":"I Want To Hold Your Hand",
+            "artist":"John Lennon",
+            "cover":"https://upload.wikimedia.org/wikipedia/en/5/52/Meet_the_Beatles.jpg",
+            "file":"https://ia801009.us.archive.org/5/items/tntvillage_360273/The%20Beatles%20-%20Meet%20The%20Beatles/01-I%20Want%20To%20Hold%20Your%20Hand.mp3"
+         },
+         {
+            "name":"This Boy",
+            "artist":"Beatles",
+            "cover":"https://upload.wikimedia.org/wikipedia/en/5/52/Meet_the_Beatles.jpg",
+            "file": "https://ia801009.us.archive.org/5/items/tntvillage_360273/The%20Beatles%20-%20Meet%20The%20Beatles/03-This%20Boy.mp3"
+         },
+         {
+            "name":"It Won't Be Long",
+            "artist":"John Lennon",
+            "cover":"https://upload.wikimedia.org/wikipedia/en/5/52/Meet_the_Beatles.jpg",
+            "file":"https://ia801009.us.archive.org/5/items/tntvillage_360273/The%20Beatles%20-%20Meet%20The%20Beatles/04-It%20Won%27t%20Be%20Long.mp3"
+         },
+         {
+            "name":"All I've Got To Do",
+            "artist":"John Lennon",
+            "cover":"https://upload.wikimedia.org/wikipedia/en/5/52/Meet_the_Beatles.jpg",
+            "file": "https://ia801009.us.archive.org/5/items/tntvillage_360273/The%20Beatles%20-%20Meet%20The%20Beatles/05-All%20I%27ve%20Got%20To%20Do.mp3"
+         }
+      ]
+   },
+   {
+      "_id":"2",
+      "artist":"The Beatles",
+      "date":"22.11.1963",
+      "name":"With the Beatles",
+      "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/2e/ef/98/2eef98bb-7f0d-a524-4ef9-a7d3f06acae4/source/600x600bb.jpg",
+      "songs":[
+         {
+            "name":"Back in the USSR",
+            "artist":"Ringo Star",
+            "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/2e/ef/98/2eef98bb-7f0d-a524-4ef9-a7d3f06acae4/source/600x600bb.jpg"
+         },
+         {
+            "name":"Dear Prudence",
+            "artist":"Ringo Star",
+            "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/2e/ef/98/2eef98bb-7f0d-a524-4ef9-a7d3f06acae4/source/600x600bb.jpg"
+         },
+         {
+            "name":"Glass Onion",
+            "artist":"Ringo Star",
+            "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/2e/ef/98/2eef98bb-7f0d-a524-4ef9-a7d3f06acae4/source/600x600bb.jpg"
+         },
+         {
+            "name":"Ob-La-Di, Ob-La-Da",
+            "artist":"Ringo Star",
+            "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/2e/ef/98/2eef98bb-7f0d-a524-4ef9-a7d3f06acae4/source/600x600bb.jpg"
+         },
+         {
+            "name":"Wild Honey Pie",
+            "artist":"Ringo Star",
+            "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/2e/ef/98/2eef98bb-7f0d-a524-4ef9-a7d3f06acae4/source/600x600bb.jpg"
+         }
+      ]
+   },
+   {
+      "_id":"3",
+      "artist":"The Beatles",
+      "date":"10.07.1964",
+      "name":"A Hard Day’s Night",
+      "cover":"https://is4-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/600x600bb.jpg",
+      "songs":[
+         {
+            "name":"A Hard Day's Night",
+            "artist":"George Harisson",
+            "cover":"https://is4-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/600x600bb.jpg"
+         },
+         {
+            "name":"I Should Have Known Better",
+            "artist":"George Harisson",
+            "cover":"https://is4-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/600x600bb.jpg"
+         },
+         {
+            "name":"If I fell",
+            "artist":"George Harisson",
+            "cover":"https://is4-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/600x600bb.jpg"
+         },
+         {
+            "name":"I'm Happy Just to Dance with You",
+            "artist":"George Harisson",
+            "cover":"https://is4-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/600x600bb.jpg"
+         },
+         {
+            "name":"And I Love Her",
+            "artist":"George Harisson",
+            "cover":"https://is4-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/600x600bb.jpg"
+         },
+         {
+            "name":"Tell Me Why",
+            "artist":"George Harisson",
+            "cover":"https://is4-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/600x600bb.jpg"
+         },
+         {
+            "name":"Can't Buy Me Love",
+            "artist":"George Harisson",
+            "cover":"https://is4-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/600x600bb.jpg"
+         },
+         {
+            "name":"Any time at all",
+            "artist":"George Harisson",
+            "cover":"https://is4-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/600x600bb.jpg"
+         }
+      ]
+   },
+   {
+      "_id":"4",
+      "artist":"The Beatles",
+      "date":"04.12.1964",
+      "name":"Beatles For Sale",
+      "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/5f/f5/91/5ff59179-0878-5018-9a75-71f3bb2ad357/source/600x600bb.jpg",
+      "songs":[
+         {
+            "name":"Back in the USSR",
+            "artist":"Ringo Star",
+            "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/5f/f5/91/5ff59179-0878-5018-9a75-71f3bb2ad357/source/600x600bb.jpg"
+         },
+         {
+            "name":"Dear Prudence",
+            "artist":"Ringo Star",
+            "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/5f/f5/91/5ff59179-0878-5018-9a75-71f3bb2ad357/source/600x600bb.jpg"
+         },
+         {
+            "name":"Glass Onion",
+            "artist":"Ringo Star",
+            "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/5f/f5/91/5ff59179-0878-5018-9a75-71f3bb2ad357/source/600x600bb.jpg"
+         },
+         {
+            "name":"Ob-La-Di, Ob-La-Da",
+            "artist":"Ringo Star",
+            "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/5f/f5/91/5ff59179-0878-5018-9a75-71f3bb2ad357/source/600x600bb.jpg"
+         },
+         {
+            "name":"Wild Honey Pie",
+            "artist":"Ringo Star",
+            "cover":"https://is2-ssl.mzstatic.com/image/thumb/Music/v4/5f/f5/91/5ff59179-0878-5018-9a75-71f3bb2ad357/source/600x600bb.jpg"
+         }
+      ]
+   },
+   {
+      "_id":"7",
+      "artist":"The Beatles",
+      "date":"05.08.1966",
+      "name":"Revolver",
+      "cover":"https://is1-ssl.mzstatic.com/image/thumb/Music/v4/b3/db/c7/b3dbc75f-4146-3556-ffce-4b679b3aca7e/source/600x600bb.jpg",
+      "songs":[
+
+      ]
+   },
+   {
+      "_id":"8",
+      "artist":"The Beatles",
+      "date":"01.06.1967",
+      "name":"Sgt. Pepper’s Lonely Hearts Club Band",
+      "cover":"https://is5-ssl.mzstatic.com/image/thumb/Music/v4/8c/2a/05/8c2a0589-3e7b-c207-64ea-17643bac5e97/source/600x600bb.jpg",
+      "songs":[
+
+      ]
+   },
+   {
+      "_id":"9",
+      "artist":"The Beatles",
+      "date":"27.11.1967",
+      "name":"Magical Mystery Tour",
+      "cover":"https://is4-ssl.mzstatic.com/image/thumb/Music/v4/33/d3/2e/33d32ef8-61d5-1785-d27b-fd3ab8ae7438/source/600x600bb.jpg",
+      "songs":[
+
+      ]
+   }
+]

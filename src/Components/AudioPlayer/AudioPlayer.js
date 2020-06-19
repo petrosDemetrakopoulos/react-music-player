@@ -69,7 +69,7 @@ function AudioPlayer() {
 
   return(
     <div className="player">
-    <audio id="audio" src={song && song.file} onTimeUpdate={() => songProgress()}>
+    <audio id="audio" src={song && song.file} onTimeUpdate={() => songProgress()} onEnded={() => nextSong()}>
     Your browser does not support the <code>audio</code> element.
     </audio>
     <SongDetails name={song ? song.name: ""} artist={song ? song.artist: ""}/>

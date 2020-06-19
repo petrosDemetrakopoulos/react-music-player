@@ -6,7 +6,8 @@ export const Store = React.createContext()
 const initialState = {
 	albums: [],
 	album: {},
-	playbackStatus: 'not_loaded'
+	playbackStatus: 'not_loaded',
+	playlist: []
 };
 
 export function StoreProvider(props) {

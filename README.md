@@ -105,6 +105,7 @@ The code has the following structure
 
 * **Styling**: For styling I used the **Bootstrap** framework which offers many pretty components and CSS classes. In some points it was essential to write custom CSS (which I tried to do in an external CSS file and not in-line for code readability / best practices reasons)
 
+* **Audio player**: For the core functionality of the audio player I used the default HTML5 audio object.
 
 ### Mock data
 `data.json` file holds the mock data that the app uses to display. 

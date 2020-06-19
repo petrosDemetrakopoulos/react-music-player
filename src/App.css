@@ -54,7 +54,8 @@
 
 .player {
   background-color: black;
-  margin-top: 1em;
+  margin-top: 3em;
+  width: 100%;
 }
 
 .controls {

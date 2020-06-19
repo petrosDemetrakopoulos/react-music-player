@@ -11,8 +11,8 @@ export default function reducer(state, action) {
 		case 'FETCH_ALBUM' : {
 			return {
 				...state,
-				album: action.payload,
-				playlist: action.payload.songs
+				album: action.payload.album,
+				playlist: action.payload.playlist
 			};
 		}
 		case 'PICK_SONG' : {

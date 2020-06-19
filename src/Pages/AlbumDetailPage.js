@@ -11,7 +11,7 @@ const AlbumDetailPage = ({match}) => {
 		const album = data.filter(el => el._id === _id)[0] //getting the album selected from the _id param
 		dispatch({
 			type: 'FETCH_ALBUM',
-			payload: album,
+			payload: state.playlist.length > 0 ? {album: album, playlist: state.playlist}: {album: album, playlist: album.songs}
 		})
 		setLoading(false);
 	}, [dispatch]);

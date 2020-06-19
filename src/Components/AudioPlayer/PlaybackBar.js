@@ -1,7 +1,6 @@
 import React from 'react';
 import Bar from './Bar'
 import moment from 'moment';
-import momentDurationFormatSetup from 'moment-duration-format';
 
 export default function PlaybackBar(props) {
   const { duration, curTime, onTimeUpdate } = props;

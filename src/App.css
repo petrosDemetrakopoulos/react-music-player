@@ -109,3 +109,11 @@
   border-radius: 50%;
   background-color: gray;
 }
+
+.next {
+  margin-left: 1em;
+}
+
+.previous {
+  margin-right: 1em;
+}

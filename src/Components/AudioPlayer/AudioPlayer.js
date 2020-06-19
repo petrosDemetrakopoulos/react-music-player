@@ -4,6 +4,8 @@ import { Store } from '../../Context/Store'
 import Play from './PlayButton'
 import Pause from './PauseButton'
 import PlaybackBar from './PlaybackBar'
+import Previous from './PreviousButton';
+import Next from './NextButton'
 
 function AudioPlayer() {
   const {state, dispatch} =  useContext(Store);
@@ -54,10 +56,12 @@ function AudioPlayer() {
     </audio>
     <SongDetails name={song ? song.name: ""} artist={song ? song.artist: ""}/>
     <div className="controls">
+     <Previous />
     {playbackStatus === 'playing'? 
     <Pause handleClick={() => pause()} /> :
     <Play handleClick={() => play()} />
   }
+  <Next/>
   <PlaybackBar curTime={curTime} duration={duration} onTimeUpdate={(time) => setClickedTime(time)}/>
   </div>
   </div>

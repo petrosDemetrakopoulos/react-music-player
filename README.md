@@ -34,6 +34,12 @@ Each song has the following attributes
 
 * It should show the **Play / Pause, Next and Previous** controls
 
+## Functionality
+Except the functionality mentioned in the document, I implemented the following functionality:
+
+* When a song ends, the next of the lbums begins
+
+* If the song that just ended is the last song of the album, the audio player loads and plays the first one of the next album (tried to mock the Spotify functionality)
 
 ## Project structure
 The code has the following structure
@@ -96,6 +102,11 @@ The code has the following structure
     * The are more lightweight than class based components
 
 * **Styling**: For styling I used the **Bootstrap** framework which offers many pretty components and CSS classes. In some points it was essential to write custom CSS (which I tried to do in an external CSS file and not in-line for code readability / best practices reasons)
+
+
+### Mock data
+`data.json` file holds the mock data that the app uses to display. 
+I found both images and audio files in [archive.org](archive.org) and [wikimedia.org](wikimedia.org)
 
 ### How to run it
 

@@ -74,3 +74,38 @@
   line-height: 1.33;
   border-radius: 25px;
 }
+
+.bar {
+  user-select: none;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0.5em;
+  background-color: black
+}
+.bar_time {
+  color: white;
+  font-size: 16px;
+}
+
+.bar_progress {
+  flex: 1;
+  border-radius: 5px;
+  margin: 0 20px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bar_progress_knob {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  background-color: gray;
+}

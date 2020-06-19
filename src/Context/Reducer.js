@@ -26,6 +26,12 @@ export default function reducer(state, action) {
 				playbackStatus: action.payload
 			};
 		}
+		case 'SONG_PROGRESS': {
+			return {
+				...state, 
+				songProgress: action.payload 
+			};
+		}
 		default: return state
 	}
 }

@@ -14,6 +14,13 @@ function AudioPlayer() {
 
   useEffect(() => {
     const audio = document.getElementById("audio");
+    setCurTime(audio.currentTime)
+    setDuration(audio.duration)
+
+    if (clickedTime && clickedTime !== curTime) {
+      audio.currentTime = clickedTime;
+      setClickedTime(null);
+    } 
     if(playbackStatus === 'playing'){
       audio.play();
     } else {
@@ -31,10 +38,18 @@ function AudioPlayer() {
     dispatch({type:'CHANGE_PLAYBACK_STATUS', payload: 'paused'})
   }
 
+  function songProgress() {
+    const audio = document.getElementById('audio');
+    dispatch({
+      type: 'SONG_PROGRESS',
+      payload: audio.currentTime
+    })
+  }
+
 
   return(
     <div className="player">
-    <audio id="audio" src={song && song.file}>
+    <audio id="audio" src={song && song.file} onTimeUpdate={() => songProgress()}>
     Your browser does not support the <code>audio</code> element.
     </audio>
     <SongDetails name={song ? song.name: ""} artist={song ? song.artist: ""}/>

@@ -9,10 +9,7 @@ export default function SongCard({ crnSong }) {
     }
 
   return (
-    <div
-      className="card"
-      style={{ width: "16rem", marginLeft: "1rem", marginTop: "1rem" }}
-    >
+    <div className="card song_card">
       <div className="card-body text-center">
       <div className="details_container">
         <h5 className="card-title song_name_card">{crnSong.name}</h5>

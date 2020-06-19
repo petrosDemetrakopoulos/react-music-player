@@ -20,12 +20,18 @@
 }
 
 .album-card {
-   width: 16rem;
-   margin-left: 1rem;
-  marginTop: 1rem;
+ width: 16rem;
+ margin-left: 1rem;
+ margin-top: 1rem;
 }
 
 .song_name_card {
   min-height: 2em;
   vertical-align: middle;
+}
+
+.song_card {
+  width: 16rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }

@@ -15,4 +15,11 @@ export default function reducer(state, action) {
 		}
 		default: return state
 	}
+	case 'PICK_SONG' : {
+		return {
+			...state,
+			song: action.payload,
+			playbackStatus: 'playing'
+		};
+	}
 }

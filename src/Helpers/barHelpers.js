@@ -8,16 +8,16 @@ export function handleTimeDrag(e, onTimeUpdate, duration) {
 		onTimeUpdate(calcClickedTime(eMove, duration));
 	};
 
-	document.addEventListener("mousemove", updateTimeOnMove);
+	document.addEventListener('mousemove', updateTimeOnMove);
 
-	document.addEventListener("mouseup", () => {
-		document.removeEventListener("mousemove", updateTimeOnMove);
+	document.addEventListener('mouseup', () => {
+		document.removeEventListener('mousemove', updateTimeOnMove);
 	});
 }
 
 export function calcClickedTime(e, duration) { //calculate the time based on the point of the bar clicked
 	const clickPositionInPage = e.pageX;
-	const bar = document.querySelector(".bar_progress");
+	const bar = document.querySelector('.bar_progress');
 	const barStart = bar.getBoundingClientRect().left + window.scrollX;
 	const barWidth = bar.offsetWidth;
 	const clickPositionInBar = clickPositionInPage - barStart;
@@ -27,6 +27,6 @@ export function calcClickedTime(e, duration) { //calculate the time based on the
 
 export function formatDuration(duration) {
 	return moment
-	.duration(duration, "seconds")
-	.format("mm:ss", { trim: false });
+	.duration(duration, 'seconds')
+	.format('mm:ss', { trim: false });
 }

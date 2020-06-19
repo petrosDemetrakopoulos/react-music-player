@@ -6,6 +6,7 @@ import Pause from './PauseButton'
 import PlaybackBar from './PlaybackBar'
 import Previous from './PreviousButton';
 import Next from './NextButton'
+import PlaybackController from '../../Helpers/PlaybackController'
 
 function AudioPlayer() {
   const {state, dispatch} =  useContext(Store);
@@ -13,6 +14,7 @@ function AudioPlayer() {
   const [duration, setDuration] = useState();
   const [curTime, setCurTime] = useState();
   const [clickedTime, setClickedTime] = useState();
+  const {play, pause, nextSong, previousSong, songProgress} = PlaybackController()
 
   useEffect(() => {
     const audio = document.getElementById("audio");
@@ -29,43 +31,6 @@ function AudioPlayer() {
       audio.pause();
     }
   })
-
-  function play() {
-    if(song){
-      dispatch({type:'CHANGE_PLAYBACK_STATUS', payload: 'playing'})
-    }
-  }
-
-  function pause() {
-    dispatch({type:'CHANGE_PLAYBACK_STATUS', payload: 'paused'})
-  }
-
-  function nextSong() {
-    if(song){
-      let crnSongIndex = playlist.indexOf(song);
-      if(crnSongIndex!== (playlist.length -1)){
-        dispatch({type:'PICK_SONG', payload: playlist[crnSongIndex+1]})
-      }
-    }
-  }
-
-    function previousSong() {
-    if(song){
-      let crnSongIndex = playlist.indexOf(song);
-      if(crnSongIndex!== 0){
-        dispatch({type:'PICK_SONG', payload: playlist[crnSongIndex-1]})
-      }
-    }
-  }
-
-  function songProgress() {
-    const audio = document.getElementById('audio');
-    dispatch({
-      type: 'SONG_PROGRESS',
-      payload: audio.currentTime
-    })
-  }
-
 
   return(
     <div className="player">

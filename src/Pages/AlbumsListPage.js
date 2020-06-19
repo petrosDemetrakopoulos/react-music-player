@@ -1,12 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 import AlbumsList from '../Components/Albums/AlbumsList';
 import { Store } from '../Context/Store'
+import data from '../data/data.json'
 //A custom component representing the Albums list page
 const AlbumsListPage = () => {
 	const {state, dispatch} = useContext(Store);
 	const [loading, setLoading] = useState(true);
 	useEffect(() => {
-		const albums = [{_id:1, name: "The Beatles", cover: "https://www.whizzpast.com/wp-content/uploads/2013/10/Abbey+Road.jpg", songs: [{name: "A beatles song", cover: "https://www.whizzpast.com/wp-content/uploads/2013/10/Abbey+Road.jpg", artist: "The beatles"}]}]
+		const albums = data;
 		dispatch({
 			type: 'FETCH_ALBUMS',
 			payload: albums,

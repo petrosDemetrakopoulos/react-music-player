@@ -8,9 +8,7 @@ const AlbumDetailPage = ({match}) => {
 	const [loading, setLoading] = useState(true);
 	useEffect(() => {
 		const {_id} = match.params;
-		console.log(data)
-		const album = data.filter(el => el._id === _id)[0]
-		console.log(album)
+		const album = data.filter(el => el._id === _id)[0] //getting the album selected from the _id param
 		dispatch({
 			type: 'FETCH_ALBUM',
 			payload: album,

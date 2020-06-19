@@ -24,3 +24,8 @@
    margin-left: 1rem;
   marginTop: 1rem;
 }
+
+.song_name_card {
+  min-height: 2em;
+  vertical-align: middle;
+}

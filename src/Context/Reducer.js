@@ -4,13 +4,15 @@ export default function reducer(state, action) {
 			return {
 				...state,
 				albums: action.payload,
+				playlist: action.payload.map(el => el.songs).flat(),
 				album: {}
 			};
 		}
 		case 'FETCH_ALBUM' : {
 			return {
 				...state,
-				album: action.payload
+				album: action.payload,
+				playlist: action.payload.songs
 			};
 		}
 		case 'PICK_SONG' : {

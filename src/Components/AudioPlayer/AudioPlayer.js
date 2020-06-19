@@ -9,7 +9,7 @@ import Next from './NextButton'
 
 function AudioPlayer() {
   const {state, dispatch} =  useContext(Store);
-  const {playbackStatus, song} = state;
+  const {playbackStatus, song, playlist} = state;
   const [duration, setDuration] = useState();
   const [curTime, setCurTime] = useState();
   const [clickedTime, setClickedTime] = useState();
@@ -40,6 +40,24 @@ function AudioPlayer() {
     dispatch({type:'CHANGE_PLAYBACK_STATUS', payload: 'paused'})
   }
 
+  function nextSong() {
+    if(song){
+      let crnSongIndex = playlist.indexOf(song);
+      if(crnSongIndex!== (playlist.length -1)){
+        dispatch({type:'PICK_SONG', payload: playlist[crnSongIndex+1]})
+      }
+    }
+  }
+
+    function previousSong() {
+    if(song){
+      let crnSongIndex = playlist.indexOf(song);
+      if(crnSongIndex!== 0){
+        dispatch({type:'PICK_SONG', payload: playlist[crnSongIndex-1]})
+      }
+    }
+  }
+
   function songProgress() {
     const audio = document.getElementById('audio');
     dispatch({
@@ -56,12 +74,12 @@ function AudioPlayer() {
     </audio>
     <SongDetails name={song ? song.name: ""} artist={song ? song.artist: ""}/>
     <div className="controls">
-     <Previous />
+     <Previous handleClick={() => previousSong()}/>
     {playbackStatus === 'playing'? 
     <Pause handleClick={() => pause()} /> :
     <Play handleClick={() => play()} />
   }
-  <Next/>
+  <Next handleClick={() => nextSong()}/>
   <PlaybackBar curTime={curTime} duration={duration} onTimeUpdate={(time) => setClickedTime(time)}/>
   </div>
   </div>

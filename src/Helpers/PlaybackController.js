@@ -3,7 +3,7 @@ import { Store } from '../Context/Store'
 
 export default function PlaybackController() {
 	const {state, dispatch} =  useContext(Store);
-	const {playbackStatus, song, playlist} = state;
+	const {song, playlist} = state;
 	const audio = document.getElementById('audio');
 
 	function play() {

@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 import SongDetails from './SongDetails';
 import { Store } from '../../Context/Store'
 import Play from './PlayButton'
@@ -7,30 +7,13 @@ import PlaybackBar from './PlaybackBar'
 import Previous from './PreviousButton';
 import Next from './NextButton'
 import PlaybackController from '../../Helpers/PlaybackController'
+import useAudioPlayer from '../../Context/useAudioPlayer'
 
 function AudioPlayer() {
-  const {state, dispatch} =  useContext(Store);
-  const {playbackStatus, song, playlist} = state;
-  const [duration, setDuration] = useState();
-  const [curTime, setCurTime] = useState();
-  const [clickedTime, setClickedTime] = useState();
+  const {state} =  useContext(Store);
+  const {playbackStatus, song} = state;
+  const {curTime, duration, setClickedTime} = useAudioPlayer();
   const {play, pause, nextSong, previousSong, songProgress} = PlaybackController()
-
-  useEffect(() => {
-    const audio = document.getElementById("audio");
-    setCurTime(audio.currentTime)
-    setDuration(audio.duration)
-
-    if (clickedTime && clickedTime !== curTime) {
-      audio.currentTime = clickedTime;
-      setClickedTime(null);
-    } 
-    if(playbackStatus === 'playing'){
-      audio.play();
-    } else {
-      audio.pause();
-    }
-  })
 
   return(
     <div className="player">

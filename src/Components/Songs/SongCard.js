@@ -4,8 +4,7 @@ import { Button } from 'react-bootstrap';
 import { PlayFill } from 'react-bootstrap-icons';
 //A custom component representing the card of an album in the album list
 export default function SongCard({ crnSong }) {
-    const {state, dispatch} = useContext(Store);
-
+    const {dispatch} = useContext(Store);
     function handleClick() {
        dispatch({type: 'PICK_SONG', payload: crnSong})
     }

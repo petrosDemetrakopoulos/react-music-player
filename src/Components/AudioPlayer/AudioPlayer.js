@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
 import SongDetails from './SongDetails';
 import { Store } from '../../Context/Store'
-import Play from './PlayButton'
-import Pause from './PauseButton'
-import PlaybackBar from './PlaybackBar'
-import Previous from './PreviousButton';
-import Next from './NextButton'
+import Play from './Controls/PlayButton'
+import Pause from './Controls/PauseButton'
+import PlaybackBar from './Controls/PlaybackBar'
+import Previous from './Controls/PreviousButton';
+import Next from './Controls/NextButton'
 import PlaybackController from '../../Helpers/PlaybackController'
 import useAudioPlayer from '../../Context/useAudioPlayer'
 

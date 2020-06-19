@@ -1,5 +1,5 @@
 import React from 'react';
-import {handleTimeDrag} from '../../Helpers/barHelpers'
+import {handleTimeDrag} from '../../../Helpers/barHelpers'
 export default function Bar(props) {
 	const {percentage, onTimeUpdate, duration} = props;
 	return (

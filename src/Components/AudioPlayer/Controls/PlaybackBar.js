@@ -1,6 +1,6 @@
 import React from 'react';
 import Bar from './Bar'
-import {formatDuration} from '../../Helpers/barHelpers'
+import {formatDuration} from '../../../Helpers/barHelpers'
 
 export default function PlaybackBar(props) {
   const { duration, curTime, onTimeUpdate } = props;

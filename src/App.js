@@ -3,6 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import AlbumsListPage from './Pages/AlbumsListPage'
+import AlbumDetailPage from './Pages/AlbumDetailPage'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             </div>
           </nav>
           <Route path='/' exact component={AlbumsListPage} />
+          <Route path='/album/:_id' component={AlbumDetailPage} />
           </div>
       </Router>
       </div>
